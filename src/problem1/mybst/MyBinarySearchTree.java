@@ -81,5 +81,11 @@ public class MyBinarySearchTree {
             System.out.print(root.getdata()+"\t");
         }
     }
+    public void pre_VS_post(){
+        postorder(root);
+        System.out.println();
+        preorder(root);
+    }
+
 
 }
