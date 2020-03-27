@@ -11,6 +11,6 @@ import problem1.mybst.MyBinarySearchTree;
 // executable class
 public class MyMain {
     public static void main(String[] args){
-
+        MyBinarySearchTree tree= new MyBinarySearchTree();
     }
 }
