@@ -17,5 +17,8 @@ public class MyBinarySearchTree {
         root = null;
         count = 0;
     }
+    public void insert(int data){
+
+    }
 
 }
