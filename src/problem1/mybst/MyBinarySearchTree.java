@@ -18,7 +18,8 @@ public class MyBinarySearchTree {
         count = 0;
     }
     public void insert(int data){
-
+        TreeNode ns = new TreeNode();
+        ns.setdata(data);
     }
 
 }
