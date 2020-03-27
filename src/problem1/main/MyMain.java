@@ -17,5 +17,9 @@ public class MyMain {
         tree.insert(12);
         tree.insert(73);
         tree.insert(14);
+        System.out.println("ALL Left Nodes are:");
+        tree.print_left_node();
+        System.out.println("Count of all Nodes which are not having left node is: ");
+        tree.count_not_left_node();
     }
 }
