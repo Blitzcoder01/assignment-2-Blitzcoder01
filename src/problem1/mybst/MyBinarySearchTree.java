@@ -56,7 +56,9 @@ public class MyBinarySearchTree {
             LeftNode(root.getRight());
         }
 
-
 }
+    public void print_left_node() {
+
+    }
 
 }
