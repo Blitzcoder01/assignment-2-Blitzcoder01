@@ -60,5 +60,8 @@ public class MyBinarySearchTree {
     public void print_left_node() {
         LeftNode(root);
     }
+    public void count_not_left_node(){
+        System.out.println(count);
+    }
 
 }
