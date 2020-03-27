@@ -64,4 +64,14 @@ public class MyBinarySearchTree {
         System.out.println(count);
     }
 
+    public void preorder(TreeNode root){
+        if(root == null)    return;
+        else{
+            System.out.print(root.getdata()+"\t");
+            preorder(root.getLeft());
+            preorder(root.getRight());
+
+        }
+    }
+
 }
