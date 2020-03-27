@@ -29,5 +29,7 @@ public class TreeNode {
     public TreeNode getLeft(){
         return left;
     }
-
+    public TreeNode getRight(){
+        return right;
+    }
 }

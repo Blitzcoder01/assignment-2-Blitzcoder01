@@ -21,6 +21,7 @@ public class MyMain {
         tree.insert(53);
         tree.insert(40);
         tree.insert(31);
+        tree.pre_VS_post();
 
     }
 }
