@@ -20,4 +20,21 @@ public class MyCircularQueue {
         rear = null;
         count = 0;
     }
+
+    public void enqueue(int roll,int backlog,int a_count){
+        Student st = new Student(roll,backlog,a_count);
+        Node ns = new Node();
+        ns.setStudent(st);
+
+        if(front==null){
+            front = ns;
+        }
+        else{
+            rear.setNext(ns);
+        }
+
+        rear = ns;
+        rear.setNext(front);
+        count++;
+    }
 }
