@@ -30,6 +30,14 @@ public class MyQueue {
             return next;
         }
     }
+
+    Node front;
+    Node rear;
+
+    public MyQueue(){
+        front = null;
+        rear = null;
+    }
 }
 
 
