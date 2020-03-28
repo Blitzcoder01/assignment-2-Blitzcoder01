@@ -61,7 +61,13 @@ public class MyQueue {
         }
     }
 
-
+    public void getPreSucc(){
+        Node temp = front.getNext();
+        while(temp!=null){
+            System.out.print(temp.getData()+"\t");
+            temp = temp.getNext();
+        }
+    }
 }
 
 
