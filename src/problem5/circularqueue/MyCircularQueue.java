@@ -37,4 +37,19 @@ public class MyCircularQueue {
         rear.setNext(front);
         count++;
     }
+
+    public void removeBackLog(){
+        while(count-->0){
+            Student ss = front.getStudent();
+            if((ss.getBacklog()-ss.getA_count())>0){
+                front = front.getNext();
+                rear = rear.getNext();
+            }
+            else{
+                rear.setNext(front.getNext());
+                front = front.getNext();
+            }
+        }
+    }
+
 }
