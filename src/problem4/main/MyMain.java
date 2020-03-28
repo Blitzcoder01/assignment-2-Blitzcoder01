@@ -26,6 +26,8 @@ public class MyMain {
         obj.insert(17);
 
         MyQueue mq = new MyQueue();
+        mq.preSuccessor(obj.getroot());
+        mq.getPreSucc();
     }
 
 
