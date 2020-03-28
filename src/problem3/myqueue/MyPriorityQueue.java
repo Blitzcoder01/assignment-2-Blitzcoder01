@@ -10,24 +10,24 @@ import problem3.node.Node;
 
 public class MyPriorityQueue {
     Node head;
-    public MyPriorityQueue(){
+
+    public MyPriorityQueue() {
         head = null;
     }
-    public void enqueue(String name,int roll){
+
+    public void enqueue(String name, int roll) {
         Node ns = new Node();
         ns.setName(name);
         ns.setRoll(roll);
         Node temp = head;
-        if(head==null){
+        if (head == null) {
             head = ns;
-        }
-        else{
-            if(head.getRoll()>roll){
+        } else {
+            if (head.getRoll() > roll) {
                 ns.setNext(head);
                 head = temp;
-            }
-            else{
-                while(temp.getNext()!=null && temp.getNext().getRoll()<roll){
+            } else {
+                while (temp.getNext() != null && temp.getNext().getRoll() < roll) {
                     temp = temp.getNext();
                 }
                 ns.setNext(temp.getNext());
@@ -35,11 +35,13 @@ public class MyPriorityQueue {
             }
         }
     }
-    public void view(){
+
+    public void view() {
         Node temp = head;
-        while(temp!=null){
-            System.out.println(temp.getName()+"\t"+temp.getRoll());
+        while (temp != null) {
+            System.out.println(temp.getName() + "\t" + temp.getRoll());
             temp = temp.getNext();
         }
 
+    }
 }
