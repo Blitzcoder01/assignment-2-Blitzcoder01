@@ -13,6 +13,10 @@ import problem3.myqueue.MyPriorityQueue;
 public class MyMain {
     public  static void main(String[] args) {
         MyPriorityQueue obj = new MyPriorityQueue();
+        obj.enqueue("sara",16);
+        obj.enqueue("riya",27);
+        obj.enqueue("apala", 23);
+        obj.view();
     }
 
 }
