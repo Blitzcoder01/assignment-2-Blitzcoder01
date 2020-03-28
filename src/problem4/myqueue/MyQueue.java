@@ -51,6 +51,17 @@ public class MyQueue {
             rear = ns;
         }
     }
+
+    public void preSuccessor(TreeNode root){
+        if(root == null)    return;
+        else{
+            enqueue(root.getdata());
+            preSuccessor(root.getLeft());
+            preSuccessor(root.getRight());
+        }
+    }
+
+
 }
 
 
