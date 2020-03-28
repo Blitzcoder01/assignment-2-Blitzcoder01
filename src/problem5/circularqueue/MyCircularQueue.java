@@ -11,5 +11,13 @@ import problem5.student.Student;
 
 //to implement circular queue
 public class MyCircularQueue {
+    Node front;
+    Node rear;
+    int count;
 
+    public MyCircularQueue(){
+        front = null;
+        rear = null;
+        count = 0;
+    }
 }
